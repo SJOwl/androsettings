@@ -123,4 +123,9 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
+  <template name="otl" value="setOnTouchListener { v, event -&gt;&#10;            when (event.action) {&#10;                MotionEvent.ACTION_DOWN -&gt; {&#10;                    false&#10;                }&#10;&#10;                MotionEvent.ACTION_MOVE -&gt; {&#10;                    false&#10;                }&#10;&#10;                MotionEvent.ACTION_UP   -&gt; {&#10;                    false&#10;                }&#10;&#10;                else                    -&gt; return@setOnTouchListener false&#10;            }&#10;        }" description="onTouchListener" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
 </templateSet>
