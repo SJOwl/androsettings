@@ -1,0 +1,126 @@
+<templateSet group="sj">
+  <template name="ef" value="else if($condition$){&#10;    $body$&#10;}" description="else if" toReformat="false" toShortenFQNames="true">
+    <variable name="condition" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="body" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="sb" value="StringBuilder sb = new StringBuilder();" description="StringBuilder sb = new StringBuilder();" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="bv" value="@BindView(R.id.$name$)" description="@BindView(R.id.)" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="rid" value="R.id." description="R.id." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="fv" value="findViewById(R.id.$view$);" description="findview" toReformat="false" toShortenFQNames="true">
+    <variable name="view" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="test" value="@Test public void $name$() {&#10;        $body$&#10;}" description="test method" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="body" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="t." value="Timber.$level$(&quot;$massege$&quot;)" description="Timber." toReformat="false" toShortenFQNames="true">
+    <variable name="level" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="massege" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="mt" value="println(measureTimeMillis{&#10;    $body$&#10;})" description="measure time block" toReformat="false" toShortenFQNames="true">
+    <variable name="body" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="he" value="/**&#10;* ==========================        $block_name$        ==========================&#10;*/" description="header for functions block" toReformat="false" toShortenFQNames="true">
+    <variable name="block_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="drag" value="class TemplateDragListener() : View.OnDragListener {&#10;&#10;    override fun onDrag(v: View?,&#10;                        event: DragEvent?): Boolean {&#10;        when (event?.action) {&#10;            DragEvent.ACTION_DRAG_STARTED  -&gt; {&#10;                Timber.d(&quot;ACTION_DRAG_STARTED&quot;)&#10;            }&#10;            DragEvent.ACTION_DRAG_ENTERED  -&gt; {&#10;                Timber.d(&quot; ACTION_DRAG_ENTERED&quot;)&#10;            }&#10;            DragEvent.ACTION_DRAG_LOCATION -&gt; {&#10;                Timber.d(&quot;ACTION_DRAG_LOCATION&quot;)&#10;            }&#10;            DragEvent.ACTION_DRAG_EXITED   -&gt; {&#10;                Timber.d(&quot; ACTION_DRAG_EXITED&quot;)&#10;            }&#10;            DragEvent.ACTION_DROP          -&gt; {&#10;                Timber.d(&quot; ACTION_DROP&quot;)&#10;            }&#10;            DragEvent.ACTION_DRAG_ENDED    -&gt; {&#10;                Timber.d(&quot;ACTION_DRAG_ENDED&quot;)&#10;            }&#10;        }&#10;        return true&#10;    }&#10;}" description="template drag listener" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="pf" value="private fun $NAME$($params$){$body$}" description="private fun" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="params" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="body" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="pl" value="private lateinit var " description="private lateinit var" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="pv" value="private val " description="private  val" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="om" value="observeOn(AndroidSchedulers.mainThread())" description="observe on main thread" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="dragd" value="class DummyDragListener() : OnDragListener {&#10;&#10;    override fun onDrag(v: View,&#10;                        event: DragEvent): Boolean {&#10;        when (event.action) {&#10;            DragEvent.ACTION_DRAG_STARTED  -&gt; Timber.d(&quot;ACTION_DRAG_STARTED&quot;)&#10;            DragEvent.ACTION_DRAG_ENTERED  -&gt; Timber.d(&quot; ACTION_DRAG_ENTERED&quot;)&#10;            DragEvent.ACTION_DRAG_LOCATION -&gt; Timber.d(&quot;ACTION_DRAG_LOCATION&quot;)&#10;            DragEvent.ACTION_DRAG_EXITED   -&gt; Timber.d(&quot; ACTION_DRAG_EXITED&quot;)&#10;            DragEvent.ACTION_DROP          -&gt; {&#10;                Timber.d(&quot; ACTION_DROP&quot;)&#10;                return false&#10;            }&#10;            DragEvent.ACTION_DRAG_ENDED    -&gt; Timber.d(&quot;ACTION_DRAG_ENDED&quot;)&#10;        }&#10;        return true&#10;    }&#10;}" description="dummy drag listener" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="td" value="Timber.d(&quot;$massege$&quot;)" description="Timber.d" toReformat="false" toShortenFQNames="true">
+    <variable name="massege" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="ti" value="Timber.i(&quot;$massege$&quot;)" description="Timber.i" toReformat="false" toShortenFQNames="true">
+    <variable name="massege" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="tw" value="Timber.w(&quot;$massege$&quot;)" description="Timber.w" toReformat="false" toShortenFQNames="true">
+    <variable name="massege" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="te" value="Timber.e(&quot;$massege$&quot;)" description="Timber.e" toReformat="false" toShortenFQNames="true">
+    <variable name="massege" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="tv" value="Timber.v(&quot;$massege$&quot;)" description="Timber.v" toReformat="false" toShortenFQNames="true">
+    <variable name="massege" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+</templateSet>

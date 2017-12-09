@@ -1,0 +1,9 @@
+<templateSet group="log">
+  <template name="ld" value="if(Settings.DEBUG) android.util.Log.d(Tags.tag, &quot;$METHOD_NAME$: $content$&quot;);" description="logd" toReformat="false" toShortenFQNames="true">
+    <variable name="METHOD_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="content" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

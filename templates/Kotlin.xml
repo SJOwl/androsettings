@@ -1,0 +1,8 @@
+<templateSet group="Kotlin">
+  <template name="td" value="Timber.d(&quot;$msg$&quot;)" description="Timber.d" toReformat="false" toShortenFQNames="true">
+    <variable name="msg" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+</templateSet>
