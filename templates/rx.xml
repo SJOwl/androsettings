@@ -1,0 +1,7 @@
+<templateSet group="rx">
+  <template name="sio" value="subscribeOn(Schedulers.io())" description="subscribeOn(Schedulers.io())" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+</templateSet>
